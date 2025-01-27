@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MoldCraft.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Moldes de Costura</title>
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="CssMoldCraft/estilos.css">
+    <!-- Biblioteca de Ícones Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <div id="sidebar">
+        <div class="logo">
+            <img src="./Images/logoMoldCraft.jpg" alt="Logo" Width="60%">
+        </div>
+        <ul class="nav">
+            <li><a href="Default.aspx"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="MeusMoldes.aspx"><i class="fas fa-folder"></i> Meus Uploads</a></li>
+            <li><a href="MinhasCompras.aspx"><i class="fas fa-download"></i> Meus Downloads</a></li>
+            <li><a href="Cursos.aspx"><i class="fas fa-book"></i> Tutoriais e Cursos</a></li>
+            <li><a href="Configuracoes.aspx"><i class="fas fa-cog"></i> Configurações</a></li>
+        </ul>
+
+        <!-- Botão destacado para Upload de Moldes -->
+        <div class="upload-section">
+            <a href="UploadMolde.aspx" class="upload-button">
+                <i class="fas fa-upload"></i> Upload de Moldes
+            </a>
+        </div>
+    </div>
+
+    <form id="form1" runat="server">
+        <!-- Conteúdo Principal -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <!-- O conteúdo de cada página será inserido aqui -->
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
