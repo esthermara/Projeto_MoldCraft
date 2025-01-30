@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Moldes de Costura</title>
+    <title>Plataforma de Moldes Digitais</title>
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="CssMoldCraft/estilos.css">
     <!-- Biblioteca de Ícones Font Awesome -->
@@ -15,7 +15,7 @@
     <!-- Menu Lateral -->
     <div id="sidebar">
         <div class="logo">
-            <img src="./Images/logoMoldCraft.jpg" alt="Logo" Width="60%">
+            <img src="./Images/logoMoldCraft.jpg" alt="Logo" width="60%">
         </div>
         <ul class="nav">
             <li><a href="Default.aspx"><i class="fas fa-home"></i> Início</a></li>
@@ -31,6 +31,26 @@
                 <i class="fas fa-upload"></i> Upload de Moldes
             </a>
         </div>
+
+        <!-- Links institucionais abaixo do botão -->
+        <div class="footer-links">
+            <div class="top-links">
+                <a href="PoliticaPrivacidade.aspx">Política de Privacidade</a>
+                <a href="TermosUso.aspx">Termos de Uso</a>
+            </div>
+            <div class="bottom-links">
+                <a href="Contato.aspx">Página de Contato</a>
+                <a href="Sobre.aspx">Sobre Nós</a>
+            </div>
+        </div>
+
+        <!-- Ícones das Redes Sociais -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
     </div>
 
     <form id="form1" runat="server">

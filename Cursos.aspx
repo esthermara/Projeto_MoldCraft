@@ -4,9 +4,8 @@
 
     <!-- Banner Superior -->
     <div class="banner">
-        <img src="./Images/bannerCursos.PNG" alt="Banner Cursos">
+        <img src="./Images/bannerCursos.jpg" alt="Banner Cursos">
         <div class="banner-text">
-            <h1>Venha aprender</h1>
             <p>Aprenda técnicas incríveis e aperfeiçoe suas habilidades com nossos tutoriais.</p>
         </div>
     </div>
@@ -42,7 +41,19 @@
                     <asp:Button ID="btnAssistir3" runat="server" Text="Assistir" CssClass="btn-watch" />
                 </div>
             </div>
+            <div class="video-item">
+                <img src="./Images/imgvideos.jpg" alt="Título do Vídeo">
+                <div class="video-details">
+                    <h3>Técnicas de Acabamento em Costura</h3>
+                    <p>Duração: 20:00</p>
+                    <asp:Button ID="Button1" runat="server" Text="Assistir" CssClass="btn-watch" />
+                </div>
+            </div>
         </div>
+        <!-- Anuncios -->
+    <div class="anuncios">
+        <h4>Anúncios</h4>
+    </div>
     </div>
 
 </asp:Content>

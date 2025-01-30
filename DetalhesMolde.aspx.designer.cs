@@ -42,13 +42,13 @@ namespace MoldCraft
         protected global::System.Web.UI.WebControls.Label lblCategoria;
 
         /// <summary>
-        /// Controle lblDesigner.
+        /// Controle lblCriador.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDesigner;
+        protected global::System.Web.UI.WebControls.Label lblCriador;
 
         /// <summary>
         /// Controle lblDescricao.

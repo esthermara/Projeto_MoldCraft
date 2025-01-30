@@ -105,6 +105,7 @@
     <Content Include="About.aspx" />
     <Content Include="Configuracoes.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Contato.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -128,7 +129,7 @@
     <Content Include="DetalhesMolde.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Images\bannerCursos.PNG" />
+    <Content Include="Images\bannerCursos.jpg" />
     <Content Include="Images\costura.PNG" />
     <Content Include="Images\imgvideos.jpg" />
     <Content Include="Images\kitlirio.PNG" />
@@ -150,6 +151,7 @@
     <Content Include="JsMoldCraft\script.js" />
     <Content Include="MeusMoldes.aspx" />
     <Content Include="MinhasCompras.aspx" />
+    <Content Include="PoliticaPrivacidade.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -206,6 +208,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Sobre.aspx" />
+    <Content Include="TermosUso.aspx" />
     <Content Include="UploadMolde.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -235,6 +239,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contato.aspx.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contato.aspx.designer.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cursos.aspx.cs">
       <DependentUpon>Cursos.aspx</DependentUpon>
@@ -274,6 +285,13 @@
     <Compile Include="MinhasCompras.aspx.designer.cs">
       <DependentUpon>MinhasCompras.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PoliticaPrivacidade.aspx.cs">
+      <DependentUpon>PoliticaPrivacidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PoliticaPrivacidade.aspx.designer.cs">
+      <DependentUpon>PoliticaPrivacidade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -288,6 +306,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.aspx.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sobre.aspx.designer.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermosUso.aspx.cs">
+      <DependentUpon>TermosUso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermosUso.aspx.designer.cs">
+      <DependentUpon>TermosUso.aspx</DependentUpon>
     </Compile>
     <Compile Include="UploadMolde.aspx.cs">
       <DependentUpon>UploadMolde.aspx</DependentUpon>
