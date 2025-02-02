@@ -15,87 +15,6 @@ namespace MoldCraft
     {
 
         /// <summary>
-        /// Controle btnNbaby.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNbaby;
-
-        /// <summary>
-        /// Controle btnMmimo.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMmimo;
-
-        /// <summary>
-        /// Controle btnkitlirio.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnkitlirio;
-
-        /// <summary>
-        /// Controle btnNrocambole.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNrocambole;
-
-        /// <summary>
-        /// Controle btnNiris.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNiris;
-
-        /// <summary>
-        /// Controle btnN cravo.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNcravo;
-        
-        /// <summary>
-        /// Controle btnNgirassol.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNgirassol;
-
-        /// <summary>
-        /// Controle btnNorquidia.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNorquidia;
-
-        /// <summary>
-        /// Controle btnNjasmim.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNjasmim;
-
-        /// <summary>
         /// Controle filterPanel.
         /// </summary>
         /// <remarks>
@@ -132,12 +51,12 @@ namespace MoldCraft
         protected global::System.Web.UI.WebControls.Button btnFilter;
 
         /// <summary>
-        /// Controle productRepeater.
+        /// Controle repeaterMoldes.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater productRepeater;
+        protected global::System.Web.UI.WebControls.Repeater repeaterMoldes;
     }
 }

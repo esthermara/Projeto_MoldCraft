@@ -15,39 +15,39 @@ namespace MoldCraft
     {
 
         /// <summary>
-        /// Controle btnAssistir1.
+        /// Controle filterPanel.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAssistir1;
+        protected global::System.Web.UI.WebControls.Panel filterPanel;
 
         /// <summary>
-        /// Controle btnAssistir2.
+        /// Controle txtSearchName.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAssistir2;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchName;
 
         /// <summary>
-        /// Controle btnAssistir3.
+        /// Controle btnFilter.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAssistir3;
+        protected global::System.Web.UI.WebControls.Button btnFilter;
 
         /// <summary>
-        /// Controle Button1.
+        /// Controle repeaterVideos.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Repeater repeaterVideos;
     }
 }

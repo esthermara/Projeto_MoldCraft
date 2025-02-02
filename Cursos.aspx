@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#"  MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cursos.aspx.cs" Inherits="MoldCraft.Cursos" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cursos.aspx.cs" Inherits="MoldCraft.Cursos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -10,50 +10,45 @@
         </div>
     </div>
 
+    <!-- Filtros -->
+    <div class="search-filters">
+        <h4>Filtros</h4>
+        <br />
+        <asp:Panel ID="filterPanel" runat="server" CssClass="filter-panel">
+            <!-- Filtro por nome -->
+            <div class="form-group">
+                <label for="txtSearchName">Nome:</label>
+                <asp:TextBox ID="txtSearchName" runat="server" CssClass="form-control" placeholder="Digite o nome do vídeo" />
+            </div>
+
+            <div class="form-group">
+                <asp:Button ID="btnFilter" runat="server" Text="Filtrar" CssClass="btn-filter" OnClick="btnFilter_Click" />
+            </div>
+        </asp:Panel>
+    </div>
+
     <!-- Lista de Vídeos -->
     <div class="video-section">
         <h3>Vídeos Disponíveis</h3>
         <br />
-        <div class="video-list">
-            <!-- Exemplo de vídeo -->
-            <div class="video-item">
-                <img src="./Images/imgvideos.jpg" alt="Título do Vídeo">
-                <div class="video-details">
-                    <h3>Como Fazer Moldes Básicos</h3>
-                    <p>Duração: 10:15</p>
-                    <asp:Button ID="btnAssistir1" runat="server" Text="Assistir" CssClass="btn-watch" />
+        <asp:Repeater ID="repeaterVideos" runat="server">
+            <ItemTemplate>
+                <div class="video-item">
+                    <img src='<%# Eval("Imagem") %>' alt='<%# Eval("Nome") %>' style="width: 100%; max-width: 200px;" />
+                    <div class="video-details">
+                        <h3><%# Eval("Nome") %></h3>
+                        <p>Duração: <%# Eval("Duracao") %></p>
+                        <asp:Button ID="btnAssistir" runat="server" Text="Assistir" CssClass="btn-watch" 
+                            CommandArgument='<%# Eval("Link") %>' OnClick="btnAssistir_Click" />
+                    </div>
                 </div>
-            </div>
-            <!-- Repetir este bloco para outros vídeos -->
-            <div class="video-item">
-                <img src="./Images/imgvideos.jpg" alt="Título do Vídeo">
-                <div class="video-details">
-                    <h3>Aprenda a Cortar Tecidos Corretamente</h3>
-                    <p>Duração: 15:30</p>
-                    <asp:Button ID="btnAssistir2" runat="server" Text="Assistir" CssClass="btn-watch" />
-                </div>
-            </div>
-            <div class="video-item">
-                <img src="./Images/imgvideos.jpg" alt="Título do Vídeo">
-                <div class="video-details">
-                    <h3>Técnicas de Acabamento em Costura</h3>
-                    <p>Duração: 20:00</p>
-                    <asp:Button ID="btnAssistir3" runat="server" Text="Assistir" CssClass="btn-watch" />
-                </div>
-            </div>
-            <div class="video-item">
-                <img src="./Images/imgvideos.jpg" alt="Título do Vídeo">
-                <div class="video-details">
-                    <h3>Técnicas de Acabamento em Costura</h3>
-                    <p>Duração: 20:00</p>
-                    <asp:Button ID="Button1" runat="server" Text="Assistir" CssClass="btn-watch" />
-                </div>
-            </div>
-        </div>
-        <!-- Anuncios -->
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+
+    <!-- Anuncios -->
     <div class="anuncios">
         <h4>Anúncios</h4>
-    </div>
     </div>
 
 </asp:Content>

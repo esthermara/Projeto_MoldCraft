@@ -25,7 +25,8 @@
             </div>
         </div>
         <asp:Label ID="lblMensagemErro" runat="server" CssClass="error-message" Visible="false"></asp:Label>
-        <br />
+    </div>
+    <br/>
         <!-- Direitos Autorais -->
         <div class="card">
             <h2>Direitos Autorais e Uso Responsável</h2>
@@ -60,5 +61,4 @@
                 <li>📧 Suporte ao usuário 24/7</li>
             </ul>
         </div>
-    </div>
 </asp:Content>

@@ -5,84 +5,6 @@
         <h3>Bem-vindo à Plataforma de Moldes Digitais</h3>
     </div>
 
-    <!-- Exemplo de Lista de Moldes -->
-    <div class="product-list">
-        
-
-        <div class="product-item">
-            <img src="./Images/Mtulipa.PNG" alt="Molde 1">
-            <div class="product-details">
-                <h3>Molde Mala Tulipa</h3>
-                <asp:Button ID="btnNbaby" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNbaby_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/Mmimo.PNG" alt="Molde 2">
-            <div class="product-details">
-                <h3>Molde Kit Mochila e Necessaire Mimo</h3>
-                <asp:Button ID="btnMmimo" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnMmimo_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/kitlirio.PNG" alt="Molde 3">
-            <div class="product-details">
-                <h3>Molde Kit Mala e Necessaire Lírio</h3>
-                <asp:Button ID="btnkitlirio" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnkitlirio_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/Nrocambole.PNG" alt="Molde 4">
-            <div class="product-details">
-                <h3>Molde Necessaire Rocambole</h3>
-                <asp:Button ID="btnNrocambole" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNrocambole_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/Niris.PNG" alt="Molde 5">
-            <div class="product-details">
-                <h3>Molde Necessaire Íris</h3>
-                <asp:Button ID="btnNiris" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNiris_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/Ncravo.PNG" alt="Molde 6">
-            <div class="product-details">
-                <h3>Molde Necessaire Cravo</h3>
-                <asp:Button ID="btnNcravo" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNcravo_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-
-         <div class="product-item">
-            <img src="./Images/Ngirassol.PNG" alt="Molde 7">
-            <div class="product-details">
-                <h3>Molde kit Necessaire Maleta Girassol</h3>
-                <asp:Button ID="btnNgirassol" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNgirassol_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/Norquidea.PNG" alt="Molde 8">
-            <div class="product-details">
-                <h3>Molde Necessaire Orquídea</h3>
-                <asp:Button ID="btnNorquidia" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNorquidia_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-
-        <div class="product-item">
-            <img src="./Images/NJasmim.PNG" alt="Molde 9">
-            <div class="product-details">
-                <h3>Molde Necessaire Jasmim</h3>
-                <asp:Button ID="btnNjasmim" runat="server" Text="BAIXAR PDF GRÁTIS" OnClick="btnNjasmim_Click" CssClass="btn-baixar"/>
-            </div>
-        </div>
-    </div>
-
     <!-- Filtros -->
     <div class="search-filters">
         <h4>Filtros</h4>
@@ -113,25 +35,25 @@
         </asp:Panel>
     </div>
 
-    <!-- Anuncios -->
-    <div class="anuncios">
-        <h4>Anúncios</h4>
-    </div>
-
-    <!-- Lista de produtos -->
+    <!-- Lista de Moldes -->
     <div class="product-list">
-        <asp:Repeater ID="productRepeater" runat="server">
+        <asp:Repeater ID="repeaterMoldes" runat="server">
             <ItemTemplate>
                 <div class="product-item">
-                    <img src='<%# Eval("ImageURL") %>' alt="Produto" />
+                    <img src='<%# Eval("Imagem") %>' alt='<%# Eval("Nome") %>' style="width: 100%; max-width: 200px;" />
                     <div class="product-details">
-                        <h3><%# Eval("Name") %></h3>
-                        <p><%# Eval("Category") %></p>
-                        <span>R$ <%# Eval("Price") %></span>
-                        <asp:Button ID="btnBuy" runat="server" Text="Comprar" CssClass="btn-buy" OnClick="btnComprarRepeater_Click" />
+                        <h3><%# Eval("Nome") %></h3>
+                        <p>Categoria: <%# Eval("Categoria") %></p>
+                        <asp:Button ID="btnBaixar" runat="server" Text="BAIXAR PDF GRÁTIS" CssClass="btn-baixar" 
+                            CommandArgument='<%# Eval("Nome") %>' OnClick="btnBaixar_Click" />
                     </div>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
+    </div>
+
+    <!-- Anuncios -->
+    <div class="anuncios">
+        <h4>Anúncios</h4>
     </div>
 </asp:Content>
