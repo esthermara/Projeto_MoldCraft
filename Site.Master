@@ -12,27 +12,43 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div id="menu-toggle">
+        <i class="fas fa-bars"></i>
+        <!-- Ícone de menu sanduíche (Font Awesome) -->
+    </div>
     <!-- Menu Lateral -->
     <div id="sidebar">
         <div class="logo">
             <img src="./Images/logoMoldCraft.jpg" alt="Logo" style="width: 60%;">
         </div>
         <ul class="nav">
-            <li><a href="Default.aspx"><i class="fas fa-home"></i> Início</a></li>
-            <li><a href="Cursos.aspx"><i class="fas fa-book"></i> Tutoriais e Cursos</a></li>
-            <li><a href="MeusMoldes.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-folder"></i> Meus Uploads</a></li>
-            <li><a href="MinhasCompras.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-download"></i> Meus Downloads</a></li>
-            <li><a href="Configuracoes.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-cog"></i> Configurações</a></li>
+            <li><a href="Default.aspx"><i class="fas fa-home"></i>Início</a></li>
+            <li><a href="Cursos.aspx"><i class="fas fa-book"></i>Tutoriais e Cursos</a></li>
+            <li><a href="MeusMoldes.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-folder"></i>Meus Uploads</a></li>
+            <li><a href="MinhasCompras.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-download"></i>Meus Downloads</a></li>
+            <li><a href="Configuracoes.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-cog"></i>Configurações</a></li>
         </ul>
 
         <!-- Botão destacado para Upload de Moldes -->
         <div class="upload-section">
             <a href="UploadMolde.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;" class="upload-button">
-                <i class="fas fa-upload"></i> Upload de Moldes
+                <i class="fas fa-upload"></i>Upload de Moldes
             </a>
         </div>
 
-        <!-- Links institucionais abaixo do botão -->
+       
+
+    </div>
+
+    <form id="form1" runat="server">
+        <!-- Conteúdo Principal -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <!-- O conteúdo de cada página será inserido aqui -->
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+     <!-- Links institucionais abaixo do botão -->
         <div class="footer-links">
             <div class="top-links">
                 <a href="PoliticaPrivacidade.aspx">Política de Privacidade</a>
@@ -50,16 +66,11 @@
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
-
-    </div>
-
-    <form id="form1" runat="server">
-        <!-- Conteúdo Principal -->
-        <div id="content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                <!-- O conteúdo de cada página será inserido aqui -->
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

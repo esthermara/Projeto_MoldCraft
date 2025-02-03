@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Esther Mara\Desktop\PROJETO MOLDCRAFT</_PublishTargetUrl>
-    <History>True|2025-02-02T21:06:56.2512301Z;</History>
+    <History>True|2025-02-02T21:21:41.9330115Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -40,10 +40,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/27/2022 23:39:10</publishTime>
     </File>
     <File Include="bin/MoldCraft.dll">
-      <publishTime>02/02/2025 18:06:02</publishTime>
+      <publishTime>02/02/2025 18:21:39</publishTime>
     </File>
     <File Include="bin/MoldCraft.pdb">
-      <publishTime>02/02/2025 18:06:02</publishTime>
+      <publishTime>02/02/2025 18:21:39</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>04/22/2019 01:06:16</publishTime>
@@ -544,7 +544,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/05/2024 14:33:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/02/2025 18:06:52</publishTime>
+      <publishTime>02/02/2025 18:21:40</publishTime>
     </File>
   </ItemGroup>
 </Project>

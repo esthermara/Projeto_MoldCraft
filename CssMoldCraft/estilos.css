@@ -1,5 +1,4 @@
-﻿
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +22,7 @@ body {
     justify-content: space-between;
     padding: 20px 0;
     border-radius: 0 10px 10px 0;
+    display: block; /* Esconder o menu lateral */
 }
 
     #sidebar .nav {
@@ -65,6 +65,7 @@ body {
     padding: 20px;
     background-color: black;
     text-align: center;
+    margin-top: 80px;
 }
 
 .upload-button {
@@ -90,9 +91,13 @@ body {
     }
 /* links institucionais */
 .footer-links {
-    margin-top: 20px;
-    padding: 15px;
+    display: flex;
+    color: white;
     text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
 }
 
     .footer-links .top-links,
@@ -100,6 +105,7 @@ body {
         display: flex;
         justify-content: space-between;
         margin: 5px 0;
+       
     }
 
     .footer-links a {
@@ -109,7 +115,8 @@ body {
         font-size: 10px;
         font-weight: 500;
         text-decoration: none;
-        padding: 2px 0;
+        padding: 0;
+        width: 100px;
         transition: all 0.3s ease-in-out;
     }
 
@@ -117,7 +124,8 @@ body {
             color: #ffffff;
             background-color: #d13e33;
             border-radius: 5px;
-            padding: 10px;
+            padding: 2px;
+            width: 100px;
             font-weight: bold;
             transform: scale(1.05);
         }
@@ -127,7 +135,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 0;
+    margin: 10px;
 }
 
     .social-icons a {
@@ -193,35 +201,9 @@ body {
     }
 
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    #sidebar {
-        width: 200px;
-    }
 
-    #content {
-        margin-left: 200px;
-    }
 
-    .product-item {
-        width: 45%;
-    }
-}
 
-@media screen and (max-width: 480px) {
-    #sidebar {
-        width: 100%;
-        position: relative;
-    }
-
-    #content {
-        margin-left: 0;
-    }
-
-    .product-item {
-        width: 100%;
-    }
-}
 /* Estilos para a página de configurações */
 .config-form {
     max-width: 600px;
@@ -277,8 +259,9 @@ body {
     .btn-save:hover {
         background-color: #0056b3;
     }
+
 .anuncios {
-    position:fixed;
+    position: fixed;
     top: 300px;
     right: 20px;
     background-color: #fff;
@@ -393,9 +376,10 @@ body {
     margin-top: 10px;
     transition: all 0.3s ease-in-out;
 }
+
     .btn-baixar:hover {
-    background-color: #444;
-    transform: scale(1.05);
+        background-color: #444;
+        transform: scale(1.05);
     }
 
 /* Estilo para o Formulário de Upload */
@@ -484,24 +468,7 @@ body {
             text-decoration: underline;
         }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 600px) {
-    .form-container {
-        margin: 10px;
-        padding: 15px;
-    }
 
-        .form-container label {
-            font-size: 13px;
-        }
-
-        .form-container input[type="text"],
-        .form-container input[type="file"],
-        .form-container button {
-            font-size: 12px;
-            padding: 8px;
-        }
-}
 /* Banner Superior */
 .banner {
     position: relative;
@@ -615,12 +582,7 @@ body {
         background-color: #444;
     }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .video-list {
-        grid-template-columns: 1fr; /* Em telas pequenas, exibe apenas uma coluna */
-    }
-}
+
 
 /* detalhes molde */
 a {
@@ -776,3 +738,300 @@ a {
         .page-container button:hover {
             background: #0056b3;
         }
+
+
+
+#menu-toggle {
+    display: block; /* Mostrar o ícone de menu */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+}
+
+/* Mostrar o menu lateral quando o ícone de menu for clicado */
+#sidebar.active {
+    display: none;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .form-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+        .form-container label {
+            font-size: 13px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="file"],
+        .form-container button {
+            font-size: 12px;
+            padding: 8px;
+        }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .video-section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        grid-template-columns: repeat(1, 1fr); /* 1 colunas para desktop */
+    }
+
+        .video-section h3 {
+            font-size: 28px; /* Tamanho maior para desktop */
+        }
+
+    .video-item img {
+        height: 180px; /* Altura maior para desktop */
+    }
+
+    .video-details h3 {
+        font-size: 18px; /* Tamanho maior para desktop */
+    }
+
+    .btn-watch {
+        font-size: 14px; /* Tamanho maior para desktop */
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        overflow: hidden;
+        margin: 30px 0 5px 0;
+    }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+}
+
+/* Responsividade para Celular (telas menores que 768px) */
+@media screen and (max-width: 768px) {
+    /* Ajustes gerais */
+    body {
+        font-size: 14px; /* Tamanho de fonte menor para melhor legibilidade */
+        line-height: 1.5; /* Espaçamento entre linhas */
+        background-color: black;
+    }
+
+    /* Menu Lateral */
+    #sidebar {
+        width: 100%; /* Ocupar toda a largura da tela */
+        height: auto; /* Altura automática */
+        position: relative; /* Remover posição fixa */
+        border-radius: 0; /* Remover bordas arredondadas */
+        padding: 10px 0; /* Reduzir o padding */
+    }
+
+        #sidebar .nav li a {
+            padding: 8px 10px; /* Reduzir o padding dos links */
+            font-size: 14px; /* Tamanho de fonte menor */
+        }
+
+            #sidebar .nav li a i {
+                font-size: 16px; /* Tamanho de ícone menor */
+            }
+
+    /* Conteúdo Principal */
+    #content {
+        margin-left: 0; /* Remover margem esquerda */
+        padding: 10px; /* Reduzir o padding */
+    }
+
+    /* Cabeçalho */
+    .header h1 {
+        font-size: 24px; /* Tamanho de título menor */
+        margin-bottom: 15px; /* Reduzir margem inferior */
+    }
+
+    /* Banner Superior */
+    .banner {
+        width: 100%; /* Ocupar toda a largura da tela */
+        height: 150px; /* Reduzir a altura */
+    }
+
+    .banner-text h1 {
+        font-size: 20px; /* Tamanho de título menor */
+    }
+
+    .banner-text p {
+        font-size: 14px; /* Tamanho de texto menor */
+    }
+
+    /* Seção de Vídeos */
+    .video-section {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        max-width: 100%; /* Ocupar toda a largura da tela */
+        padding: 10px; /* Reduzir o padding */
+    }
+    .video-section h3{
+        font-size: 12px;
+    }
+
+    .video-item {
+        margin-bottom: 15px; /* Espaçamento entre itens */
+    }
+
+        .video-item img {
+            height: 120px; /* Reduzir a altura da imagem */
+        }
+
+    .video-details h3 {
+        font-size: 12px; /* Tamanho de título menor */
+    }
+
+    .video-details p {
+        font-size: 12px; /* Tamanho de texto menor */
+    }
+
+    /* Filtros de Busca */
+    .search-filters {
+        position: relative; /* Remover posição fixa */
+        width: 100%; /* Ocupar toda a largura da tela */
+        top: 0;
+        left: 0;
+        margin-bottom: 20px; /* Adicionar margem inferior */
+        padding: 10px; /* Reduzir o padding */
+    }
+
+        .search-filters h3 {
+            font-size: 18px; /* Tamanho de título menor */
+        }
+
+    .form-control {
+        font-size: 14px; /* Tamanho de fonte menor */
+    }
+
+    /* Lista de Produtos */
+    .product-list {
+        margin-right: 0; /* Remover margem direita */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .product-item {
+        width: 100%; /* Ocupar toda a largura da tela */
+        padding: 10px; /* Reduzir o padding */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+        .product-item img {
+            margin: 0 0 10px 50px; /* Reduzir margem inferior */
+        }
+
+        .product-item .product-details h3 {
+            font-size: 16px; /* Tamanho de título menor */
+        }
+
+    /* Botões */
+    .btn-buy, .btn-edit, .btn-upload, .btn-delete, .btn-baixar, .btn-watch, .btn-save, .btn-filter {
+        width: 100%; /* Botões ocuparem toda a largura */
+        margin-top: 10px; /* Adicionar margem superior */
+        padding: 10px; /* Reduzir o padding */
+        font-size: 14px; /* Tamanho de fonte menor */
+    }
+
+    /* Links de Rodapé */
+    .footer-links {
+        padding: 10px; /* Reduzir o padding */
+    }
+
+        .footer-links .top-links, .footer-links .bottom-links {
+            flex-direction: column; /* Exibir links em coluna */
+        }
+
+        .footer-links a {
+            padding: 10px; /* Reduzir o padding */
+            font-size: 12px; /* Tamanho de fonte menor */
+        }
+
+    /* Formulários */
+    .config-form, .form-container {
+        padding: 15px; /* Reduzir o padding */
+    }
+
+        .form-container label {
+            font-size: 14px; /* Tamanho de fonte menor */
+        }
+
+        .form-container input[type="text"],
+        .form-container textarea,
+        .form-container input[type="file"] {
+            font-size: 14px; /* Tamanho de fonte menor */
+            padding: 8px; /* Reduzir o padding */
+        }
+
+        .form-container button {
+            font-size: 14px; /* Tamanho de fonte menor */
+            padding: 10px; /* Reduzir o padding */
+        }
+
+    /* Páginas de Conteúdo */
+    .page-container {
+        padding: 15px; /* Reduzir o padding */
+    }
+
+        .page-container h1 {
+            font-size: 24px; /* Tamanho de título menor */
+        }
+
+        .page-container h2 {
+            font-size: 20px; /* Tamanho de título menor */
+        }
+
+        .page-container p {
+            font-size: 14px; /* Tamanho de fonte menor */
+        }
+
+        .page-container ul li {
+            font-size: 14px; /* Tamanho de fonte menor */
+        }
+}
+/* Esconder o menu lateral por padrão em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: none; /* Esconder o menu lateral */
+        border-radius: 0;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+
+    #menu-toggle {
+        display: block; /* Mostrar o ícone de menu */
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
+    /* Mostrar o menu lateral quando o ícone de menu for clicado */
+    #sidebar.active {
+        display: block;
+    }
+}
