@@ -70,7 +70,7 @@ body {
 
 .upload-button {
     display: inline-block;
-    background-color: #d7e8e4;
+    background-color: #f1ebd2;
     color: black;
     font-size: 16px;
     text-decoration: none;
@@ -260,16 +260,35 @@ body {
         background-color: #0056b3;
     }
 
+/* Estilo do contêiner do anúncio */
 .anuncios {
     position: fixed;
     top: 300px;
     right: 20px;
     background-color: #fff;
     padding: 15px;
-    width: 250px;
+    width: auto;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garantir que fique acima de outros elementos */
 }
+
+/* Estilo do botão de fechar */
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .close-button:hover {
+        color: #000; /* Mudar cor ao passar o mouse */
+    }
 
 
 
@@ -310,7 +329,7 @@ body {
 }
 
 .btn-filter {
-    background-color: #d7ebe4;
+    background-color: #f1ebd2;
     color: black;
     border-radius: 10px;
     border: none;
@@ -776,49 +795,6 @@ a {
         }
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .video-section {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 10px auto;
-        grid-template-columns: repeat(1, 1fr); /* 1 colunas para desktop */
-    }
-
-        .video-section h3 {
-            font-size: 28px; /* Tamanho maior para desktop */
-        }
-
-    .video-item img {
-        height: 180px; /* Altura maior para desktop */
-    }
-
-    .video-details h3 {
-        font-size: 18px; /* Tamanho maior para desktop */
-    }
-
-    .btn-watch {
-        font-size: 14px; /* Tamanho maior para desktop */
-    }
-
-    .banner {
-        position: relative;
-        width: 100%;
-        height: 200px;
-        background-color: black;
-        overflow: hidden;
-        margin: 30px 0 5px 0;
-    }
-
-        .banner img {
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            object-fit: cover;
-            filter: brightness(0.7);
-        }
-}
 
 /* Responsividade para Celular (telas menores que 768px) */
 @media screen and (max-width: 768px) {
@@ -863,6 +839,8 @@ a {
     .banner {
         width: 100%; /* Ocupar toda a largura da tela */
         height: 150px; /* Reduzir a altura */
+        background-color: black;
+        margin: 40px 0 10px 0;
     }
 
     .banner-text h1 {
@@ -1003,6 +981,12 @@ a {
 
         .page-container ul li {
             font-size: 14px; /* Tamanho de fonte menor */
+        }
+        .detalhes-molde {
+            margin-top: 40px;
+        }
+        .info {
+        color: white;
         }
 }
 /* Esconder o menu lateral por padrão em dispositivos móveis */

@@ -33,65 +33,65 @@ namespace MoldCraft
                 case "Molde Mala Tulipa":
                     imgMolde.ImageUrl = "~/Images/Mtulipa.png";
                     lblNomeMolde.Text = "Molde Mala Tulipa";
-                    lblCategoria.Text = "Bolsas";
+                    lblCategoria.Text = "Acessórios";
                     lblCriador.Text = "Esther";
-                    lblDescricao.Text = "Linda necessaire.";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde Kit Mochila e Necessaire Mimo":
                     imgMolde.ImageUrl = "~/Images/Mmimo.png";
                     lblNomeMolde.Text = "Molde Kit Mochila e Necessaire Mimo";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde Kit Mala e Necessaire Lírio":
                     imgMolde.ImageUrl = "~/Images/kitlirio.png";
                     lblNomeMolde.Text = "Molde Kit Mala e Necessaire Lírio";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde Necessaire Rocambole":
                     imgMolde.ImageUrl = "~/Images/Nrocambole.png";
                     lblNomeMolde.Text = "Molde Necessaire Rocambole";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde Necessaire Íris":
                     imgMolde.ImageUrl = "~/Images/Niris.png";
                     lblNomeMolde.Text = "Molde Necessaire Íris";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 1cm.";
                     break;
                 case "Molde Necessaire Cravo":
                     imgMolde.ImageUrl = "~/Images/Ncravo.png";
                     lblNomeMolde.Text = "Molde Necessaire Cravo";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde kit Necessaire Maleta Girassol":
                     imgMolde.ImageUrl = "~/Images/Ngirassol.png";
                     lblNomeMolde.Text = "Molde kit Necessaire Maleta Girassol";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde Necessaire Orquídea":
                     imgMolde.ImageUrl = "~/Images/Norquidea.png";
                     lblNomeMolde.Text = "Molde Necessaire Orquídea";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 0,5 mm a 1cm.";
                     break;
                 case "Molde Necessaire Jasmim":
                     imgMolde.ImageUrl = "~/Images/Njasmim.png";
                     lblNomeMolde.Text = "Molde Necessaire Jasmim";
-                    lblCategoria.Text = "Mochilas";
-                    lblCriador.Text = "Esther Mara";
-                    lblDescricao.Text = "Mochila para o bebê.";
+                    lblCategoria.Text = "Acessórios";
+                    lblCriador.Text = "Esther";
+                    lblDescricao.Text = "Este molde já contém margem de costura de 1cm.";
                     break;
                 default:
                     imgMolde.ImageUrl = "~/Images/logoMoldCraft.png";

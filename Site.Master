@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="CssMoldCraft/estilos.css">
     <!-- Biblioteca de Ícones Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- script para verificação do ads do google -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9304886624216757"
+     crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="menu-toggle">
@@ -62,15 +65,19 @@
 
         <!-- Ícones das Redes Sociais -->
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/moldecraft/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/@_mold_craft" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@mold_craft" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function () {
             var sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('active');
         });
+        function fecharAnuncio() {
+            const anuncio = document.querySelector('.anuncios');
+            anuncio.style.display = 'none'; // Oculta o anúncio
+        }
     </script>
 </body>
 </html>

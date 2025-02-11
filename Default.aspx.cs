@@ -26,7 +26,7 @@ namespace MoldCraft
                 List<Molde> moldes = new List<Molde>
                 {
                     new Molde { Nome = "Molde Mala Tulipa", Categoria = "Acessórios", Imagem = "./Images/Mtulipa.PNG" },
-                    new Molde { Nome = "Molde Kit Mochila e Necessaire Mimo", Categoria = "Outros", Imagem = "./Images/Mmimo.PNG" },
+                    new Molde { Nome = "Molde Kit Mochila e Necessaire Mimo", Categoria = "Acessórios", Imagem = "./Images/Mmimo.PNG" },
                     new Molde { Nome = "Molde Kit Mala e Necessaire Lírio", Categoria = "Acessórios", Imagem = "./Images/kitlirio.PNG" },
                     new Molde { Nome = "Molde Necessaire Rocambole", Categoria = "Acessórios", Imagem = "./Images/Nrocambole.PNG" },
                     new Molde { Nome = "Molde Necessaire Íris", Categoria = "Acessórios", Imagem = "./Images/Niris.PNG" },

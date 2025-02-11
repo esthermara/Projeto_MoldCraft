@@ -48,7 +48,9 @@
 
     <!-- Anuncios -->
     <div class="anuncios">
-        <h4>Anúncios</h4>
+        <span class="close-button" onclick="fecharAnuncio()">&times;</span>
+        <!-- Código do anúncio do Google aqui -->
+        <iframe src="https://www.google.com/adsense/static/pt_BR/ads.html" width="250" height="250"></iframe>
     </div>
 
 </asp:Content>
