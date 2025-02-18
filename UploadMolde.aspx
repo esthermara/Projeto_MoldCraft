@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UploadMolde.aspx.cs" Inherits="MoldCraft.UploadMolde" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UploadMolde.aspx.cs" Inherits="MoldCraft.UploadMolde" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
      <div class="form-container">

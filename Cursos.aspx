@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cursos.aspx.cs" Inherits="MoldCraft.Cursos" %>
+﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeBehind="Cursos.aspx.cs" Inherits="MoldCraft.Cursos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -44,13 +44,6 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
-    </div>
-
-    <!-- Anuncios -->
-    <div class="anuncios">
-        <span class="close-button" onclick="fecharAnuncio()">&times;</span>
-        <!-- Código do anúncio do Google aqui -->
-        <iframe src="https://www.google.com/adsense/static/pt_BR/ads.html" width="250" height="250"></iframe>
     </div>
 
 </asp:Content>

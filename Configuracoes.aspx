@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Configuracoes.aspx.cs" Inherits="MoldCraft.Configuracoes" %>
+﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeBehind="Configuracoes.aspx.cs" Inherits="MoldCraft.Configuracoes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <div class="config-form">
         <h3>Configurações de Conta</h3>

@@ -26,7 +26,7 @@
         </div>
         <ul class="nav">
             <li><a href="Default.aspx"><i class="fas fa-home"></i>Início</a></li>
-            <li><a href="Cursos.aspx"><i class="fas fa-book"></i>Tutoriais e Cursos</a></li>
+            <li><a href="Cursos.aspx" title=" Em breve você terá acesso a esta página." onclick="return false;"><i class="fas fa-book"></i>Tutoriais e Cursos</a></li>
             <li><a href="MeusMoldes.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-folder"></i>Meus Uploads</a></li>
             <li><a href="MinhasCompras.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-download"></i>Meus Downloads</a></li>
             <li><a href="Configuracoes.aspx" title=" Em breve você poderá fazer login como criador e terá acesso a esta página." onclick="return false;"><i class="fas fa-cog"></i>Configurações</a></li>
@@ -66,7 +66,7 @@
         <!-- Ícones das Redes Sociais -->
         <div class="social-icons">
             <a href="https://www.facebook.com/moldecraft/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/@_mold_craft" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://instagram.com/_mold_craft" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.youtube.com/@mold_craft" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     <script>
@@ -74,10 +74,6 @@
             var sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('active');
         });
-        function fecharAnuncio() {
-            const anuncio = document.querySelector('.anuncios');
-            anuncio.style.display = 'none'; // Oculta o anúncio
-        }
     </script>
 </body>
 </html>

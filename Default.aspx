@@ -51,11 +51,4 @@
             </ItemTemplate>
         </asp:Repeater>
     </div>
-
-    <!-- Anuncios -->
-    <div class="anuncios">
-        <span class="close-button" onclick="fecharAnuncio()">&times;</span>
-        <!-- Código do anúncio do Google aqui -->
-        <iframe src="https://www.google.com/adsense/static/pt_BR/ads.html" width="250" height="250"></iframe>
-    </div>
 </asp:Content>

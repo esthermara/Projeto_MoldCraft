@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MeusMoldes.aspx.cs" Inherits="MoldCraft.MeusMoldes" %>
+﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeBehind="MeusMoldes.aspx.cs" Inherits="MoldCraft.MeusMoldes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="header">
